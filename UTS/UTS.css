@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+}
+    /* Style Header */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+        position: relative; /* Menjadikan posisi relatif untuk submenu */
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #ffd700; /* Warna kuning saat hover */
+    }
+
+    /* Style Submenu */
+    .submenu {
+        display: none ;
+        position: absolute;
+        top: 100%; /* Mengatur posisi submenu di bawah menu utama */
+        left: 0;
+        background-color: #333;
+        padding: 20px;
+        z-index: 1;
+    }
+
+    /* Munculkan submenu saat mengarahkan kursor ke menu utama */
+    nav ul li:hover .submenu {
+        display: block;
+    }
+canvas {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+section {
+padding: 50px 0;
+}
+
+#hero {
+background-color: #f4f4f4;
+text-align: center;
+}
+
+#hero h2 {
+margin-bottom: 20px;
+}
+
+.button {
+display: inline-block;
+padding: 10px 20px;
+font-size: 16px;
+background-color: #4CAF50;
+color: #fff;
+text-decoration: none;
+border: none;
+border-radius: 5px;
+}
+
+.button:hover {
+background-color: #45a049;
+}
+.service {
+border: 1px solid #ccc;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+#contactForm {
+max-width: 600px;
+margin: 0 auto;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+button[type="submit"] {
+padding: 10px 20px;
+font-size: 16px;
+background-color: #4CAF50;
+color: #fff;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+background-color: #45a049;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+}
+
+

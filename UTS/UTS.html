@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PT. Hekal Jaya Abadi</title>
+<link rel="stylesheet" href="UTS/UTS.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 style="font-size: 36px; margin: 0;">PT. Hekal Jaya Abadi</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#about">Tentang Kami</a>
+                            <ul>
+                                <li><a href="#bio">Biografi</a></li>
+                                <li><a href="#achievement">Prestasi</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <canvas id="movingImageCanvas"></canvas>
+
+<script>
+    const canvas = document.getElementById('movingImageCanvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = 450; // Sesuaikan tinggi canvas sesuai kebutuhan
+
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        const img = new Image();
+        img.src = "UTS/Asset/BG.jpg"; // Ganti dengan path gambar sampul Anda
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        };
+        // Tidak perlu animasi pergerakan gambar untuk gambar sampul
+    }
+
+    draw(); // Memuat gambar saat halaman dimuat
+</script>
+
+<section id="hero">
+    <div class="container">
+        <h2>Sewa Alat Berat Terbaik di Kota Anda</h2>
+        <p>Kami menyediakan berbagai macam alat berat untuk memenuhi kebutuhan proyek Anda.</p>
+        <a href="#services" class="button">Lihat Layanan Kami</a>
+    </div>
+</section>
+
+
+
+
+    <section id="bio">
+        <div class="container">
+            <h2>Biografi</h2>
+            <p>         PT. Hekal Jaya Abadi adalah penyedia solusi terkemuka dalam industri penyewaan alat berat yang berkomitmen untuk memberikan layanan berkualitas tinggi kepada pelanggan. Dengan pengalaman bertahun-tahun dalam industri ini, kami telah menjadi mitra yang terpercaya bagi berbagai proyek konstruksi, pertambangan, infrastruktur, dan industri lainnya di seluruh wilayah.
+
+                Kami menyediakan beragam alat berat berkualitas tinggi, mulai dari excavator, bulldozer, crane, loader, hingga truk dan peralatan konstruksi lainnya. Setiap alat yang kami sediakan dijamin dalam kondisi terbaik dan selalu siap untuk digunakan, sehingga dapat membantu pelanggan mencapai efisiensi dan produktivitas yang optimal dalam setiap proyek.
+                
+                Keunggulan kami tidak hanya terletak pada kualitas alat berat yang kami sediakan, tetapi juga pada layanan kami yang ramah, responsif, dan profesional. Tim kami yang terampil dan berpengalaman siap memberikan dukungan teknis, konsultasi, serta solusi yang sesuai dengan kebutuhan spesifik setiap pelanggan.
+                
+                Komitmen kami terhadap kepuasan pelanggan, keselamatan kerja, dan keberlanjutan lingkungan membuat PT. Hekal Jaya Abadi menjadi pilihan utama bagi mereka yang mencari mitra penyewaan alat berat yang dapat diandalkan dan kompeten.
+                
+                Hubungi kami hari ini dan temukan bagaimana kami dapat membantu mewujudkan proyek Anda dengan sukses!</p>
+        </div>
+    </section>
+
+    <section id="achievement">
+        <div class="container">
+            <h2>Prestasi</h2>
+            <p>         PT. Hekal Jaya Abadi adalah penyedia solusi terkemuka dalam industri penyewaan alat berat yang berkomitmen untuk memberikan layanan berkualitas tinggi kepada pelanggan. Dengan pengalaman bertahun-tahun dalam industri ini, kami telah menjadi mitra yang terpercaya bagi berbagai proyek konstruksi, pertambangan, infrastruktur, dan industri lainnya di seluruh wilayah.
+
+                Kami menyediakan beragam alat berat berkualitas tinggi, mulai dari excavator, bulldozer, crane, loader, hingga truk dan peralatan konstruksi lainnya. Setiap alat yang kami sediakan dijamin dalam kondisi terbaik dan selalu siap untuk digunakan, sehingga dapat membantu pelanggan mencapai efisiensi dan produktivitas yang optimal dalam setiap proyek.
+                
+                Keunggulan kami tidak hanya terletak pada kualitas alat berat yang kami sediakan, tetapi juga pada layanan kami yang ramah, responsif, dan profesional. Tim kami yang terampil dan berpengalaman siap memberikan dukungan teknis, konsultasi, serta solusi yang sesuai dengan kebutuhan spesifik setiap pelanggan.
+                
+                Komitmen kami terhadap kepuasan pelanggan, keselamatan kerja, dan keberlanjutan lingkungan membuat PT. Hekal Jaya Abadi menjadi pilihan utama bagi mereka yang mencari mitra penyewaan alat berat yang dapat diandalkan dan kompeten.
+                
+                Hubungi kami hari ini dan temukan bagaimana kami dapat membantu mewujudkan proyek Anda dengan sukses!</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="service">
+                <h3>Excavator</h3>
+                <img src="UTS/Asset/Exa.jpg" alt="Excavator">
+                <p>Excavator adalah alat berat yang digunakan untuk menggali atau memindahkan material.</p>
+            </div>
+            <div class="service">
+                <h3>Bulldozer</h3>
+                <img src="UTS/Asset/Bull.jpg" alt="Bulldozer">
+                <p>Bulldozer adalah alat berat yang digunakan untuk meratakan tanah atau material.</p>
+            </div>
+            <div class="service">
+                <h3>Crane</h3>
+                <img src="UTS/Asset/Cra.jpg" alt="Crane">
+                <p>Crane adalah jenis alat berat yang digunakan untuk mengangkat dan memindahkan benda berat secara vertikal dan horizontal.</p>
+            </div>
+            <div class="service">
+                <h3>Loader</h3>
+                <img src="UTS/Asset/Load.jpg" alt="Loader">
+                <p>Loader adalah jenis alat berat yang digunakan untuk memindahkan material seperti tanah, kerikil, pasir, batu, dan bahan bangunan lainnya di lokasi konstruksi, pertambangan, dan industri lainnya.</p>
+            </div>
+            <div class="service">
+                <h3>Truck Tambang</h3>
+                <img src="UTS/Asset/Tm.jpeg" alt="Truck">
+                <p>Truck tambang, atau yang juga dikenal sebagai dump truck atau haul truck, adalah jenis truk berat yang dirancang khusus untuk mengangkut material berat di lokasi pertambangan atau konstruksi.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: #f9f9f9; padding: 50px 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 30px;">Hubungi Kami</h2>
+            <div class="contact-details" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="contact-info" style="flex: 1; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                    <h3 style="margin-bottom: 20px;">Informasi Kontak</h3>
+                    <p style="margin-bottom: 10px;"><strong>Alamat:</strong> Jl. Jogja-Solo Km21, Klaten, Jawa Tengah</p>
+                    <p style="margin-bottom: 10px;"><strong>Telepon:</strong> +6282314351224</p>
+                    <p style="margin-bottom: 10px;"><strong>Email:</strong> info@hekajayaabadi.com</p>
+                </div>
+                <div class="contact-form" style="flex: 1; margin-left: 20px;">
+                    <h3 style="margin-bottom: 20px;">Kirim Pesan</h3>
+                    <form id="contactForm" onsubmit="return submitForm()">
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <label for="name">Nama:</label>
+                            <input type="text" id="name" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <label for="message">Pesan:</label>
+                            <textarea id="message" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+                        </div>
+                        <button type="submit" class="button" style="background-color: #4CAF50; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; Detail Pemesanan : +6282314351224 </p>
+        <div class="container">
+            <p>&copy; 2024 PT. Hekal Jaya Abadi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="UTS/UTS.js"></script>
+</body>
+</html>
+
+
